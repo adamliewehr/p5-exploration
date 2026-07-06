@@ -10,8 +10,8 @@ let vertLines = [];
 let horzLines = [];
 
 function setup() {
-  createCanvas(600, 600);
-  // createCanvas(windowWidth, windowHeight);
+  // createCanvas(600, 600);
+  createCanvas(windowWidth, windowHeight);
   // frameRate(1);
 
   background(200);

@@ -1,5 +1,6 @@
 function setup() {
-  createCanvas(400, 400);
+  let square = 400;
+  createCanvas(square, square);
   pixelDensity(1); // making the display equal for all users
   background(51);
 }
@@ -25,15 +26,15 @@ function draw() {
 
   for (let y = 0; y < height; y++) {
     for (let x = 0; x < width; x++) {
-      let index = (x + y * width) * 4;
+      let index = (x + y * width) * 4; // this is the formula to get any pixel in the pixel array
       // pixels[index + 0] = random() * 255;
       // pixels[index + 1] = random() * 255;
       // pixels[index + 2] = random() * 255;
       // pixels[index + 3] = random() * 255;
 
-      pixels[index + 0] = x;
-      pixels[index + 1] = (x * y) % 255;
-      pixels[index + 2] = y;
+      pixels[index + 0] = y;
+      pixels[index + 1] = (x * y) % width;
+      pixels[index + 2] = x;
       pixels[index + 3] = 255;
       // pixels[index + 3] = random() * 255;
     }

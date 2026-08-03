@@ -1,0 +1,2 @@
+the idea is that the user can spawn random walkers around the screen, and some of them write to the 2d array, and some of them erase. this would show up visually as black and white pixels. 
+another idea to go with this is, if a random walker gets stuck (meaning it doen't have any options depedning on its type, so for example if a eraser random walker is surrounded by nothing), then it switches to a drawer random walker

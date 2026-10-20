@@ -20,7 +20,7 @@ fs.readFile("allFolders.txt", "utf8", function (err, data) {
     if (line.includes(".html")) {
       //   console.log(`Line ${index + 1}: ./${line}\n`);
       console.log(`https://adamliewehr.github.io/p5-exploration/${line.slice(0, line.indexOf(":"))}`);
-      markdownContent += `https://adamliewehr.github.io/p5-exploration/${line.slice(0, line.indexOf(":"))}\n`;
+      markdownContent += `https://adamliewehr.github.io/p5-exploration/${line.slice(0, line.indexOf(":"))}\n\n`;
     }
   });
 
